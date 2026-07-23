@@ -239,6 +239,27 @@ h3 { font-size: 18px; font-weight: 700; }
   font-size: 13px;
   color: var(--gray-600);
 }
+.hero__note a { color: var(--indigo); font-weight: 600; }
+
+/* ---------- App Store badge ---------- */
+.store-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 28px;
+  background: #000;
+  color: #fff;
+  border-radius: 12px;
+  padding: 10px 18px 10px 16px;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+.store-badge:hover { opacity: 0.85; }
+.store-badge:active { transform: scale(0.97); }
+.store-badge__icon { flex-shrink: 0; }
+.store-badge__text { display: flex; flex-direction: column; line-height: 1.15; }
+.store-badge__small { font-size: 11px; }
+.store-badge__big { font-size: 19px; font-weight: 700; letter-spacing: -0.01em; }
+.store-badge--cta { margin-top: 8px; }
 .hero__art {
   position: relative;
   display: flex;
@@ -654,6 +675,14 @@ section { padding: 96px 0; }
 .cta h2 { color: #fff; max-width: 620px; margin: 0 auto; }
 .cta p { color: rgba(255,255,255,0.68); max-width: 480px; margin: 16px auto 0; font-size: 16px; line-height: 1.6; }
 .cta__inner { display: flex; flex-direction: column; align-items: center; }
+.cta__android-label {
+  margin: 40px 0 0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+}
 
 /* ---------- Footer ---------- */
 .footer { border-top: 1px solid var(--gray-100); padding: 40px 0; }

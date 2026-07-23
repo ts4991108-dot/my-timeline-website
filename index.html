@@ -40,7 +40,7 @@
       <a href="faq">FAQ</a>
     </nav>
 
-    <a class="btn btn--primary btn--sm nav__cta" href="#waitlist">Join the waitlist</a>
+    <a class="btn btn--primary btn--sm nav__cta" href="https://apps.apple.com/us/app/relivin/id6789972532" target="_blank" rel="noopener">Download</a>
 
     <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
       <span></span><span></span><span></span>
@@ -52,7 +52,7 @@
     <a href="#how-it-works">How it works</a>
     <a href="#privacy">Privacy</a>
     <a href="faq">FAQ</a>
-    <a class="btn btn--primary" href="#waitlist">Join the waitlist</a>
+    <a class="btn btn--primary" href="https://apps.apple.com/us/app/relivin/id6789972532" target="_blank" rel="noopener">Download on the App Store</a>
   </div>
 </header>
 
@@ -62,7 +62,7 @@
   <section class="hero">
     <div class="wrap hero__inner">
       <div class="hero__copy reveal">
-        <p class="eyebrow">Now building — early access opening soon</p>
+        <p class="eyebrow">Available now on the App Store</p>
         <h1>Every moment,<br>in order.</h1>
         <p class="hero__slogan">Capture your life, not your image.</p>
         <p class="hero__sub">
@@ -70,17 +70,15 @@
           organized by age, filled in together with the people who love them most.
         </p>
 
-        <form class="waitlist-form" id="heroForm" novalidate>
-          <label class="sr-only" for="heroEmail">Email address</label>
-          <input class="waitlist-form__input" id="heroEmail" type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
-          <button class="btn btn--primary" type="submit">
-            <span class="btn__label">Join the waitlist</span>
-            <span class="btn__spinner" aria-hidden="true"></span>
-          </button>
-        </form>
-        <p class="waitlist-form__status" id="heroStatus" role="status" aria-live="polite"></p>
+        <a class="store-badge" href="https://apps.apple.com/us/app/relivin/id6789972532" target="_blank" rel="noopener">
+          <svg class="store-badge__icon" width="26" height="26" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+          <span class="store-badge__text">
+            <span class="store-badge__small">Download on the</span>
+            <span class="store-badge__big">App Store</span>
+          </span>
+        </a>
 
-        <p class="hero__note">No spam. One email when we open the doors.</p>
+        <p class="hero__note">Available on iPhone. <a href="#waitlist">Using Android? Get notified at launch →</a></p>
       </div>
 
       <div class="hero__art reveal reveal--delay-1" aria-hidden="true">
@@ -364,14 +362,23 @@
   <!-- CTA -->
   <section class="cta" id="waitlist">
     <div class="wrap cta__inner reveal">
-      <h2>Be first to know when Relivin opens up.</h2>
-      <p>We're building in the open with a small group of early families. Leave your email and we'll send one note when it's your turn.</p>
+      <h2>Relivin is live on the App Store.</h2>
+      <p>Download it now on iPhone. Building for Android — leave your email and we'll let you know the moment it's ready.</p>
 
+      <a class="store-badge store-badge--cta" href="https://apps.apple.com/us/app/relivin/id6789972532" target="_blank" rel="noopener">
+        <svg class="store-badge__icon" width="26" height="26" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+        <span class="store-badge__text">
+          <span class="store-badge__small">Download on the</span>
+          <span class="store-badge__big">App Store</span>
+        </span>
+      </a>
+
+      <p class="cta__android-label">Android — join the waitlist</p>
       <form class="waitlist-form waitlist-form--cta" id="ctaForm" novalidate>
         <label class="sr-only" for="ctaEmail">Email address</label>
         <input class="waitlist-form__input" id="ctaEmail" type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
         <button class="btn btn--light" type="submit">
-          <span class="btn__label">Join the waitlist</span>
+          <span class="btn__label">Notify me</span>
           <span class="btn__spinner" aria-hidden="true"></span>
         </button>
       </form>
@@ -391,7 +398,7 @@
       <a href="#features">Features</a>
       <a href="#how-it-works">How it works</a>
       <a href="#privacy">Privacy</a>
-      <a href="#waitlist">Join the waitlist</a>
+      <a href="https://apps.apple.com/us/app/relivin/id6789972532" target="_blank" rel="noopener">Download</a>
       <a href="privacy">Privacy Policy</a>
       <a href="faq">FAQ</a>
     </nav>
